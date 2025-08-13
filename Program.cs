@@ -25,10 +25,16 @@
                 string body = Console.ReadLine();
 
                 int mark = InputHelper.ReadInt("Enter Question Mark:");
+                int qType;
 
-                int qType = InputHelper.ReadInt("Choose Question Type (1- MCQ, 2- True/False):");
-
-
+                if (examType == 1)
+                {
+                    qType = InputHelper.ReadInt("Choose Question Type (1- MCQ, 2- True/False):");
+                }
+                else
+                {
+                    qType = 1; 
+                }
                 Question q;
                 if (qType == 1)
                 {
