@@ -26,7 +26,7 @@ namespace ConsoleApp1
                 if (q.CheckAnswer(choice))
                 {
                     Console.WriteLine("Correct!");
-                    totalScore += q.Mark; // ✅ add mark to score
+                    totalScore += q.Mark;
                 }
                 else
                 {
